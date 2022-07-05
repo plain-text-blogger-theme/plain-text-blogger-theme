@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:lang='data:blog.locale == &quot;en&quot; ? &quot;en-US&quot; : data:blog.locale'>
+<b:comment><![CDATA[
+Sets the `html` element's `lang` attribute to the language code of the language
+specified in the Blogger settings.  If the language code is "en", converts it to
+"en-US" to be more specific.  (Blogger does not have an explicit American
+English setting.)
+
+Editing the theme directly in Blogger > Theme > Edit HTML will add the `xmlns`*
+attributes to the `html` element.  To prevent this, select "Restore" instead of
+"Edit HTML" and upload the theme's XML file from the computer.
+
+
+Displays the content only if the requested page is the home page or a post.
+This will cause other pages such as monthly archives to throw a 500 Internal
+Server Error (due to the missing `head` and `body` elements).  This prevents
+those unwanted pages from being indexed by search engines.
+
+All tags are escaped to prevent them from being modified by Blogger's XML
+parser.  A Blogger theme must have exactly one `b:skin` element, but we do not
+want to use it.  Puts it at the end of this comment so that it is recognized by
+the XML parser but not displayed in the HTML source.
+]]><b:skin><![CDATA[]]></b:skin></b:comment>
+<b:if cond='data:view.isHomepage or data:view.isPost'>  &lt;head&gt;
+    &lt;meta charset=&#39;<data:blog.encoding/>&#39;&gt;
+    &lt;meta name=&#39;color-scheme&#39; content=&#39;light dark&#39;&gt;
+    &lt;meta name=&#39;viewport&#39; content=&#39;width=device-width, initial-scale=1&#39;&gt;
+    &lt;title&gt;<b:eval expr='data:view.isHomepage ? data:blog.title : data:blog.url.canonical.https'/>&lt;/title&gt;
+    &lt;link rel=&#39;canonical&#39; href=&#39;<data:blog.url.canonical.https/>&#39;&gt;
+    &lt;link rel=&#39;license&#39; href=&#39;https://creativecommons.org/licenses/by-sa/4.0/&#39;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+<b:comment><![CDATA[
+Surrounds the `b:section` and `b:widget` tags with an HTML comment because they
+generate unwanted `div` tags.  The `b:widget-setting` tags are not used but are
+auto-generated and cannot be removed.
+]]></b:comment>    &lt;!-- <b:section
+id='main'>
+<b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
+  <b:widget-settings>
+    <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+    <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+    <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+    <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+    <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+    <b:widget-setting name='showAuthor'>false</b:widget-setting>
+    <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+    <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='reactionsLabel'/>
+    <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+    <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+    <b:widget-setting name='showLabels'>false</b:widget-setting>
+    <b:widget-setting name='showLocation'>false</b:widget-setting>
+    <b:widget-setting name='showTimestamp'>false</b:widget-setting>
+    <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+    <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+    <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+    <b:widget-setting name='showReactions'>false</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'> --&gt;
+    &lt;main&gt;
+<b:comment><![CDATA[
+On the home page, displays the list of posts.
+]]></b:comment><b:if cond='data:view.isHomepage'>      &lt;nav&gt;
+        &lt;ul&gt;<b:loop values='data:posts' var='post'>
+          &lt;li&gt;
+            &lt;a href=&#39;<data:post.url/>&#39;&gt;<data:post.title/>&lt;/a&gt;
+          &lt;/li&gt;</b:loop>
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/main&gt;
+<b:comment><![CDATA[
+On a post, displays the post content.
+
+Blogger's post-by-email feature converts newlines to `<br>\n` when emailing a
+post in plain text format.  Putting it in a `pre` element will result in double
+newlines in modern browsers.  (Also, there is no way to wrap text in a `pre`
+element in older browsers that do not support `white-space` or similar CSS
+properties.)  On the other hand, putting it in any other non-preformatted
+element will collapse the whitespace.  This theme takes the latter option and
+uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
+]]></b:comment><b:else/><b:loop values='data:posts' var='post'>      &lt;article&gt;
+        &lt;script&gt;
+        &lt;!--
+          // @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&amp;dn=cc0.txt CC0-1.0
+
+          /**
+           * Displays the post content with leading or consecutive spaces
+           * converted to non-breaking spaces.
+           */
+
+          /**
+           * Replaces all occurrences of a substring in a string.
+           * @param {string} haystack The source string.
+           * @param {string} needle The substring to search for.
+           * @param {string} replacement The replacement string.
+           * @return {string} A new string with all occurrences replaced.
+           */
+          function replaceAll(haystack, needle, replacement) {
+            // If the search string is not found in the source string, returns
+            // the source string immediately.
+            var index = haystack.indexOf(needle);
+
+            if (index == -1) {
+              return haystack;
+            }
+
+            // Sets the initial value of the result to the substring up to the
+            // first occurrence with the first occurrence replaced.
+            var result = haystack.substring(0, index) + replacement;
+
+            // Sets the next search start index to the index after the entire
+            // first occurrence.
+            var needleLength = needle.length;
+            index += needleLength;
+
+            // Repeatedly finds the search string and concatenates the replaced
+            // substring into the result.
+            var matchIndex;
+            while ((matchIndex = haystack.indexOf(needle, index)) != -1) {
+              result += haystack.substring(index, matchIndex) + replacement;
+              index = matchIndex + needleLength;
+            }
+
+            // Returns the result concatenated with the substring after the
+            // entire last occurrence.
+            return result + haystack.substring(index);
+          }
+
+          // JSON-escaped post content.
+          var postContent = &quot;<data:post.body.jsonEscaped/>&quot;;
+
+          // For older browsers that do not support Unicode escape sequences,
+          // first converts them to percent encoding, and then converts them to
+          // literal characters using the `unescape` function.
+          if (&#39;\u0000&#39; == &#39;u0000&#39;) {
+            postContent = replaceAll(postContent, &#39;%&#39;, &#39;%25&#39;);
+            postContent = replaceAll(postContent, &#39;u00&#39;, &#39;%&#39;);
+            postContent = unescape(postContent);
+          }
+
+          // Replaces leading or consecutive spaces with non-breaking spaces.
+          if (postContent.replace &amp;&amp; window.RegExp) {
+            postContent = postContent.replace(
+              new RegExp(&#39;([&gt; ]|^) &#39;, &#39;g&#39;),
+              &#39;$1&#160;&#39;
+            );
+          } else {
+            if (postContent.charAt(0) == &#39; &#39;) {
+              postContent = &#39;&amp;#160;&#39; + postContent.substring(1);
+            }
+            postContent = replaceAll(postContent, &#39;&gt; &#39;, &#39;&gt;&amp;#160;&#39;);
+            postContent = replaceAll(postContent, &#39;  &#39;, &#39; &amp;#160;&#39;);
+          }
+
+          // Displays the post content in a monospaced font.  Uses the
+          // deprecated `tt` element so that it will be displayed in monospace
+          // even in browsers that do not support CSS.
+          document.write(&#39;&lt;tt&gt;&#39; + postContent + &#39;&lt;/tt&gt;&#39;);
+
+          // @license-end
+        //--&gt;
+        &lt;/script&gt;
+        &lt;noscript&gt;
+          &lt;script&gt;
+          &lt;!--
+            document.write(&#39;&lt;!--&#39;);
+          //--&gt;
+          &lt;/script&gt;
+          &lt;tt&gt;<data:post.body/>&lt;/tt&gt;
+        &lt;/noscript&gt;
+      &lt;/article&gt;
+</b:loop></b:if>    &lt;/main&gt;
+    &lt;!--
+      </b:includable>
+  <b:includable id='backlinkDeleteIcon'/>
+  <b:includable id='backlinks'/>
+  <b:includable id='comment-form'/>
+  <b:includable id='commentDeleteIcon'/>
+  <b:includable id='comment_count_picker'/>
+  <b:includable id='comment_picker'/>
+  <b:includable id='comments'/>
+  <b:includable id='feedLinks'/>
+  <b:includable id='feedLinksBody'/>
+  <b:includable id='iframe_comments'/>
+  <b:includable id='mobile-index-post'/>
+  <b:includable id='mobile-main'/>
+  <b:includable id='mobile-nextprev'/>
+  <b:includable id='mobile-post'/>
+  <b:includable id='nextprev'/>
+  <b:includable id='post'/>
+  <b:includable id='postQuickEdit'/>
+  <b:includable id='shareButtons'/>
+  <b:includable id='status-message'/>
+  <b:includable id='threaded-comment-form'/>
+  <b:includable id='threaded_comment_js'/>
+  <b:includable id='threaded_comments'/>
+</b:widget>
+</b:section>
+      <head/>
+      <body/>
+    --&gt;
+  &lt;/body&gt;</b:if>
+</html>
