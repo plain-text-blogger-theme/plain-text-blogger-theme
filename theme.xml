@@ -85,7 +85,7 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
 ]]></b:comment><b:else/><b:loop values='data:posts' var='post'>      &lt;article&gt;
         &lt;script&gt;
         &lt;!--
-          // @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&amp;dn=cc0.txt CC0-1.0
+          // @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&amp;dn=agpl-3.0.txt AGPL-3.0-or-later
 
           /**
            * Displays the post content with leading or consecutive spaces
