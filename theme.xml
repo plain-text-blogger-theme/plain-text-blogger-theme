@@ -11,6 +11,7 @@ Editing the theme directly in Blogger > Theme > Edit HTML will add the `xmlns`*
 attributes to the `html` element.  To prevent this, select "Restore" instead of
 "Edit HTML" and upload the theme's XML file from the computer.
 
+---
 
 Displays the content only if the requested page is the home page or a post.
 This will cause other pages such as monthly archives to throw a 500 Internal
