@@ -19,9 +19,11 @@ Server Error (due to the missing `head` and `body` elements).  This prevents
 those unwanted pages from being indexed by search engines.
 
 All tags are escaped to prevent them from being modified by Blogger's XML
-parser.  A Blogger theme must have exactly one `b:skin` element, but we do not
-want to use it.  Puts it at the end of this comment so that it is recognized by
-the XML parser but not displayed in the HTML source.
+parser.
+
+A Blogger theme must have exactly one `b:skin` element, but this theme does not
+use it.  Puts it at the end of this comment so that it is recognized by the XML
+parser but not displayed in the HTML source.
 ]]><b:skin><![CDATA[]]></b:skin></b:comment>
 <b:if cond='data:view.isHomepage or data:view.isPost'>  &lt;head&gt;
     &lt;meta charset=&#39;<data:blog.encoding/>&#39;&gt;
@@ -165,7 +167,15 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
           // @license-end
         //--&gt;
         &lt;/script&gt;
-        &lt;noscript&gt;
+<b:comment><![CDATA[
+Puts the static post content (with no whitespace conversion) in the `noscript`
+element for environments where JavaScript is disabled or unimplemented
+(including search engines).
+
+For older browsers that have JavaScript enabled but do not support the
+`noscript` element, puts a script that comments out all subsequent page content
+at the beginning of the `noscript` element.
+]]></b:comment>        &lt;noscript&gt;
           &lt;script&gt;
           &lt;!--
             document.write(&#39;&lt;!--&#39;);
