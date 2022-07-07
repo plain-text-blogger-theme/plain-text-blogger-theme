@@ -13,10 +13,12 @@ to delete them later, making it impossible to build up many posts.  This is why
 I need such a blogging system.
 
 This repository contains [a single Blogger theme](theme.xml).  A live example
-can be found on [my blog](https://yuukikonnobot.blogspot.com/).  It is for
-minimalists, displaying posts emailed in plain text as they are.  No date or
-post title is displayed.  Text is in a monospaced font and is not supposed to
-use any decorations, hyperlinks, images, or even non-ASCII characters.
+can be found on [my blog](https://yuukikonnobot.blogspot.com/).
+
+It is for minimalists, displaying posts emailed in plain text as they are.  No
+date or post title is displayed.  Text is in a monospaced font and is not
+supposed to use any decorations, hyperlinks, images, or even non-ASCII
+characters.
 
 Where I can use decorations, I am obsessed with displaying mathematical formulas
 nicely, starting to use HTML tags or Unicode characters, and finally introducing
