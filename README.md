@@ -25,7 +25,7 @@ a theme.
 However, due to Blogger's limitations, it is impossible to remove HTML tags or
 non-ASCII characters on the server side, and writing JavaScript to replace them
 is cumbersome, so these are achieved by enforcing my own rule of emailing in
-plain text and in ASCII.
+ASCII plain text.
 
 A live example can be found on [my blog](https://yuukikonnobot.blogspot.com/).
 
