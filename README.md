@@ -40,8 +40,9 @@ Another way is to publish your posts as anonymous pastes on
 may delete inactive pastes](https://pastebin.com/faq#18), and there is no way to
 get a list of pastes.
 
-You can create a post-only Mastodon (via Twitter) by using the Mastodon Twitter
-Crossposter and discarding the Mastodon password.
+You can create a post-only Mastodon (via Twitter) by using the [Mastodon Twitter
+Crossposter](https://crossposter.masto.donte.com.br/) and discarding the
+Mastodon password.
 
 It is possible to create a Mastodon that toots Pastebin links.  However, there
 are concerns about Crossposter's persistence and the ability to recreate a
