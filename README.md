@@ -4,16 +4,16 @@ A "once posted, can't be deleted" blogging platform
 
 ## Description
 
-Based on Blogger's post-by-email feature, by posting articles via a secret
+Based on Blogger's post-by-email feature, by publishing posts via a secret
 address and discarding the Blogger (i.e. Google) password, it is possible to
-create a blog where articles cannot be deleted once posted.
+create a blog where posts cannot be deleted once published.
 
-I am atelophobic and find myself editing articles over and over again, or
-wanting to delete them later, making it impossible to build up many articles.
-This is why I need such a blogging system.
+I am atelophobic and find myself editing posts over and over again, or wanting
+to delete them later, making it impossible to build up many posts.  This is why
+I need such a blogging system.
 
 This repository contains [a single Blogger theme](theme.xml).  This is for
-minimalists, displaying articles emailed in plain text as they are.  No date or
+minimalists, displaying posts emailed in plain text as they are.  No date or
 post title is displayed.  Text is in a monospaced font and is not supposed to
 use any decorations, hyperlinks, images, or even non-ASCII characters.
 
