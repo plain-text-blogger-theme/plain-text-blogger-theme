@@ -12,7 +12,7 @@ I am atelophobic and find myself editing posts over and over again, or wanting
 to delete them later, making it impossible to build up many posts.  This is why
 I need such a blogging system.
 
-This repository contains [a single Blogger theme](theme.xml).  This is for
+This repository contains [a single Blogger theme](theme.xml).  It is for
 minimalists, displaying posts emailed in plain text as they are.  No date or
 post title is displayed.  Text is in a monospaced font and is not supposed to
 use any decorations, hyperlinks, images, or even non-ASCII characters.
