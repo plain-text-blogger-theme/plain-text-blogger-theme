@@ -1,3 +1,3 @@
 # plain-text-blogger-theme
 
-"Once posted, can't be deleted" blogging platform
+A "once posted, can't be deleted" blogging platform
