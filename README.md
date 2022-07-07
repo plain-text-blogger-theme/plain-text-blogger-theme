@@ -8,8 +8,8 @@ By using Blogger's post-by-email feature and discarding the Blogger (i.e.,
 Google) password, you can create a blog where posts cannot be deleted once
 published.
 
-I need such a blogging system because I am atelophobic and tempted to delete old
-posts.
+I am atelophobic and tempted to delete old posts, so I need such a blogging
+system.
 
 This repository contains [one Blogger theme](theme.xml).  A live example is on
 [my blog](https://yuukikonnobot.blogspot.com/).
