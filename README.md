@@ -27,5 +27,5 @@ non-ASCII characters on the server side.  I do not want to complicate the blog's
 HTML source by adding JavaScript.  So I will achieve that by enforcing my own
 rule of emailing in ASCII plain text.
 
-Blogger does not appear to have any plans to end its service or delete inactive
+Blogger does not appear to have plans to end its service or delete inactive
 blogs.  Theoretically, my blog should continue to be accessible after my death.
