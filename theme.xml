@@ -181,7 +181,8 @@ at the beginning of the `noscript` element.
             document.write(&#39;&lt;!--&#39;);
           //--&gt;
           &lt;/script&gt;
-          &lt;tt&gt;<data:post.body/>&lt;/tt&gt;
+          &lt;tt&gt;<data:post.body/>
+&lt;/tt&gt;
         &lt;/noscript&gt;
       &lt;/article&gt;
 </b:loop></b:if>    &lt;/main&gt;
