@@ -81,10 +81,15 @@ On a post, displays the post content.
 Blogger's post-by-email feature converts newlines to `<br>\n` when emailing a
 post in plain text format.  Putting it in a `pre` element will result in double
 newlines in modern browsers.  (Also, there is no way to wrap text in a `pre`
-element in older browsers that do not support `white-space` or similar CSS
-properties.)  On the other hand, putting it in any other non-preformatted
-element will collapse the whitespace.  This theme takes the latter option and
-uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
+element in older browsers that do not support the CSS `white-space` or
+`word-wrap` properties.)
+
+On the other hand, putting it in any other non-preformatted element will
+collapse the whitespace.
+
+This theme takes the latter option and uses JavaScript to replace leading or
+consecutive spaces with non-breaking spaces.  The code is written in JavaScript
+1.0 so that it will work in older browsers.
 ]]></b:comment><b:else/><b:loop values='data:posts' var='post'>      &lt;article&gt;
         &lt;script&gt;
         &lt;!--
@@ -133,12 +138,12 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
             return result + haystack.substring(index);
           }
 
-          // JSON-escaped post content.
+          // The JSON-escaped post content.
           var postContent = &quot;<data:post.body.jsonEscaped/>&quot;;
 
-          // For older browsers that do not support Unicode escape sequences,
-          // first converts them to percent encoding, and then converts them to
-          // literal characters using the `unescape` function.
+          // In older browsers that do not support Unicode escape sequences,
+          // first converts them to percent encoding and then to literal
+          // characters using the `unescape` function.
           if (&#39;\u0000&#39; == &#39;u0000&#39;) {
             postContent = replaceAll(postContent, &#39;%&#39;, &#39;%25&#39;);
             postContent = replaceAll(postContent, &#39;u00&#39;, &#39;%&#39;);
@@ -146,6 +151,9 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
           }
 
           // Replaces leading or consecutive spaces with non-breaking spaces.
+          // In older browsers that do not support `RegExp` or
+          // `String.prototype.replace`, uses the user-defined `replaceAll`
+          // function.
           if (postContent.replace &amp;&amp; window.RegExp) {
             postContent = postContent.replace(
               new RegExp(&#39;([&gt; ]|^) &#39;, &#39;g&#39;),
