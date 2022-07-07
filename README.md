@@ -19,7 +19,7 @@ use any decorations, hyperlinks, images, or even non-ASCII characters.
 
 Where I can use decorations, I am obsessed with displaying mathematical formulas
 nicely, starting to use HTML tags or Unicode characters, and finally introducing
-MathJaX or KaTeX, and I cannot concentrate on writing.  This is why I need such
+MathJax or KaTeX, and I cannot concentrate on writing.  This is why I need such
 a theme.
 
 However, due to Blogger's limitations, it is impossible to remove HTML tags or
