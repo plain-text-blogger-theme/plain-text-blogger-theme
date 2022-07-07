@@ -29,3 +29,7 @@ enforcing my own rule of emailing in ASCII plain text.
 
 Blogger does not appear to have plans to end its service or delete inactive
 blogs.  Theoretically, my blog should continue to be accessible after my death.
+
+Such a system is not possible with WordPress because there is no "once you sign
+up, you can't cancel" hosting.  In WP, you can create a "post-only" user role
+using the User Role Editor plugin, though.
