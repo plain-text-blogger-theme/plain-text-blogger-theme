@@ -92,7 +92,7 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
 
           /**
            * Displays the post content with leading or consecutive spaces
-           * converted to non-breaking spaces.
+           * replaced by non-breaking spaces.
            */
 
           /**
@@ -100,7 +100,7 @@ uses JavaScript to convert leading or consecutive spaces to non-breaking spaces.
            * @param {string} haystack The source string.
            * @param {string} needle The substring to search for.
            * @param {string} replacement The replacement string.
-           * @return {string} A new string with all occurrences replaced.
+           * @return {string} The string with all occurrences replaced.
            */
           function replaceAll(haystack, needle, replacement) {
             // If the search string is not found in the source string, returns
