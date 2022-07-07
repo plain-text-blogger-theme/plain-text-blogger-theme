@@ -32,11 +32,13 @@ blogs.  Theoretically, my blog should continue to be accessible after my death.
 
 Such a system is not possible with WordPress because there is no "once you sign
 up, you can't cancel" hosting.  In WP, you can create a "post-only" user role
-using the User Role Editor plugin, though.
+using the [User Role Editor](https://wordpress.org/plugins/user-role-editor/)
+plugin, though.
 
-Another way is to publish your posts as anonymous pastes on Pastebin.com.
-However, there is no way to get a list of posts because posts are not tied to
-any account.
+Another way is to publish your posts as anonymous pastes on
+[Pastebin.com](https://pastebin.com/).  However, Pastebin has stated that [it
+may delete inactive pastes](https://pastebin.com/faq#18), and there is no way to
+get a list of posts because posts are not tied to any account.
 
 You can create a post-only Mastodon (via Twitter) by using the Mastodon Twitter
 Crossposter and discarding the Mastodon password.
