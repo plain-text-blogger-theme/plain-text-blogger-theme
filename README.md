@@ -8,4 +8,6 @@ Based on Blogger's post-by-email feature, by posting articles via a secret addre
 
 I am atelophobic and find myself editing articles over and over again, or wanting to delete them later, making it impossible for me to build up many articles.  This is why I need such a blogging system.
 
-This repository contains [a single Blogger theme](theme.xml).  This is for minimalists, displaying articles emailed in plain text format as they are.  No date or post title is displayed.  Text is in a monospaced font, and no decorations, including hyperlinks, are allowed.
+This repository contains [a single Blogger theme](theme.xml).  This is for minimalists, displaying articles emailed in plain text as they are.  No date or post title is displayed.  Text is in a monospaced font and is not supposed to use any decorations, hyperlinks, images, or even non-ASCII characters.
+
+Where I can use decorations, I am obsessed with displaying mathematical formulas nicely, starting to use HTML tags or Unicode characters, and finally introducing MathJaX or KaTeX, and I cannot concentrate on writing.  This is why I need such a theme.
