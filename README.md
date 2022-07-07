@@ -20,7 +20,7 @@ use decorations, hyperlinks, images, or even non-ASCII characters.
 
 Where I can use decorations, I am obsessed with displaying formulas nicely; I
 start using HTML tags, Unicode characters, or finally introducing MathJax, and I
-cannot concentrate on writing, so I need such a theme.
+cannot concentrate on writing.  So I need such a theme.
 
 However, due to Blogger's limitations, it is impossible to remove HTML tags or
 non-ASCII characters on the server side.  I do not want to complicate the blog's
