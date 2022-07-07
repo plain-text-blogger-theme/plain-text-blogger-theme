@@ -11,3 +11,5 @@ I am atelophobic and find myself editing articles over and over again, or wantin
 This repository contains [a single Blogger theme](theme.xml).  This is for minimalists, displaying articles emailed in plain text as they are.  No date or post title is displayed.  Text is in a monospaced font and is not supposed to use any decorations, hyperlinks, images, or even non-ASCII characters.
 
 Where I can use decorations, I am obsessed with displaying mathematical formulas nicely, starting to use HTML tags or Unicode characters, and finally introducing MathJaX or KaTeX, and I cannot concentrate on writing.  This is why I need such a theme.
+
+However, due to Blogger's limitations, it is impossible to remove HTML tags or non-ASCII characters on the server side, and writing JavaScript to replace them is cumbersome, so these are achieved by enforcing my own rule of emailing in plain text and in ASCII.
