@@ -18,10 +18,9 @@ It is minimalist and displays posts emailed in plain text as they are.  No date
 or post title is displayed.  Text is in a monospaced font and is not supposed to
 use decorations, hyperlinks, images, or even non-ASCII characters.
 
-Where I can use decorations, I am obsessed with displaying mathematical formulas
-nicely, starting to use HTML tags or Unicode characters, and finally introducing
-MathJax or KaTeX, and I cannot concentrate on writing.  This is why I need such
-a theme.
+Where I can use decorations, I am obsessed with displaying formulas nicely; I
+start using HTML tags, Unicode characters, or finally introducing MathJax, and I
+can't concentrate on writing.  So I need such a theme.
 
 However, due to Blogger's limitations, it is impossible to remove HTML tags or
 non-ASCII characters on the server side, and writing JavaScript to replace them
