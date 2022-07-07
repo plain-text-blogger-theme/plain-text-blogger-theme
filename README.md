@@ -38,7 +38,7 @@ Editor](https://wordpress.org/plugins/user-role-editor/) plugin.
 Another way is to publish your posts as anonymous pastes on
 [Pastebin.com](https://pastebin.com/).  However, Pastebin has stated that [it
 may delete inactive pastes](https://pastebin.com/faq#18), and there is no way to
-get a list of posts because posts are not tied to any account.
+get a list of pastes.
 
 You can create a post-only Mastodon (via Twitter) by using the Mastodon Twitter
 Crossposter and discarding the Mastodon password.
