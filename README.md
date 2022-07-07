@@ -48,5 +48,5 @@ Crossposter](https://crossposter.masto.donte.com.br/) and discarding the
 Mastodon password.
 
 It is possible to create a Mastodon that toots Pastebin links.  However, there
-are concerns about Crossposter's persistence and the ability to recreate a
-Mastodon that excludes links to inconvenient posts.
+are concerns about the Crossposter's persistence and the risk of being able to
+recreate a Mastodon that excludes links to inconvenient posts.
