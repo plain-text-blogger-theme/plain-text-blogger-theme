@@ -40,8 +40,8 @@ plugin, though.
 
 Another way is to publish your posts as anonymous pastes on
 [Pastebin.com](https://pastebin.com/).  However, Pastebin has stated that [it
-may delete inactive pastes](https://pastebin.com/faq#18), and there is no way to
-get a list of pastes.
+may delete inactive pastes](https://pastebin.com/faq#18).  Also, there is no way
+to get a list of pastes.
 
 You can create a post-only Mastodon (via Twitter) by using the [Mastodon Twitter
 Crossposter](https://crossposter.masto.donte.com.br/) and discarding the
