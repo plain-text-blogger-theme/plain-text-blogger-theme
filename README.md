@@ -15,8 +15,8 @@ This repository contains [one Blogger theme](theme.xml).  You can apply it to
 your blog by uploading it in Blogger > Theme > Restore.  A live example is on
 [my blog](https://yuukikonnobot.blogspot.com/).
 
-It is minimalist and displays plain text emailed posts as they are.  No date or
-title is displayed.  Text is in a monospaced font and is not supposed to use
+It is minimalist and displays posts emailed in plain text as they are.  No date
+or title is displayed.  Text is in a monospaced font and is not supposed to use
 decorations, hyperlinks, images, or even non-ASCII characters.
 
 Where I can use decorations, I am obsessed with displaying formulas nicely; I
