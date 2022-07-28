@@ -74,7 +74,6 @@ On the home page, displays the list of posts.
           &lt;/li&gt;</b:loop>
         &lt;/ul&gt;
       &lt;/nav&gt;
-    &lt;/main&gt;
 <b:comment><![CDATA[
 On a post, displays the post content.
 
