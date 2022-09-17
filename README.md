@@ -13,7 +13,7 @@ system.
 
 This repository contains [one Blogger theme](theme.xml).  You can apply it to
 your blog by uploading it in Blogger > Theme > Restore.  A live example is on
-[my blog](https://yuukikonnobot.blogspot.com/).
+[my blog](https://ykonno.blogspot.com/).
 
 It is minimalist and displays posts emailed in plain text as they are.  No date
 or title is displayed.  Text is in a monospaced font and is not supposed to use
