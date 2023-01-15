@@ -4,9 +4,7 @@
 
 ## Description
 
-By using Blogger's post-by-email feature and discarding the Blogger (i.e.,
-Google) password, you can create a blog where posts cannot be edited or deleted
-once published.
+By using Blogger's post-by-email feature to publish posts by sending them to a secret address, and by discarding your Blogger (i.e., Google account) password, you can create a blog where once a post is published, it cannot be edited or deleted.
 
 I am atelophobic and tempted to delete old posts, so I need such a blogging
 system.
