@@ -6,7 +6,7 @@
 
 By using Blogger's [post-by-email feature](https://support.google.com/blogger/answer/154172) to publish posts by sending them to a secret address, and by discarding your Blogger (i.e., Google account) password, you can create a blog where you can post but cannot edit or delete a post once it is published.
 
-People with [atelophobia](https://en.wikipedia.org/wiki/Atelophobia) need such a blogging system to build up their posts because they often feel old posts are "incomplete" or "embarrassing" and tempted to delete them.
+People with [atelophobia](https://en.wikipedia.org/wiki/Atelophobia) need such a blogging system to build up their posts, as they often feel old posts are "incomplete" or "embarrassing" and are tempted to delete them.
 
 This repository contains [one Blogger theme](theme.xml).  You can apply it to
 your blog by uploading it in Blogger > Theme > Restore.  A live example is on
