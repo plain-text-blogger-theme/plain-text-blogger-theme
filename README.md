@@ -50,6 +50,6 @@ to get a list of your anonymous pastes.
 
 You can create a post-only Mastodon by connecting your account to [Buffer](https://buffer.com/) and discarding your password.
 
-It is possible to create a Mastodon that toots Pastebin links.  However, there
+It is possible to create a Mastodon where you toot your Pastebin links.  However, there
 are concerns about the Crossposter's persistence and the risk of being able to
 recreate a Mastodon that excludes links to inconvenient posts.
