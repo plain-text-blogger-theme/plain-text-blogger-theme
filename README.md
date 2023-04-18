@@ -19,7 +19,7 @@ It is minimalist.  No title or date is displayed.  Text is in a monospaced font 
 decorations, hyperlinks, images, or even non-ASCII characters.
 
 Where I can use decorations, I become obsessed with displaying mathematical formulas nicely; I
-start using HTML tags, Unicode characters, and finally introduce MathJax, and I
+start using HTML tags or Unicode characters, and finally introduce MathJax, and I
 can't concentrate on writing.  Therefore I need such a theme.
 
 However, due to Blogger's limitations, it is impossible to remove HTML tags or
