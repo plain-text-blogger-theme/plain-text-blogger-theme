@@ -8,7 +8,7 @@ See [my blog](https://ykonno.blogspot.com/?m=0).
 
 ## Description
 
-By using Blogger's [post-by-email feature](https://support.google.com/blogger/answer/154172), and by discarding your Blogger (i.e., Google account) password, you can create a blog where you can post but cannot edit or delete a post once it is published.
+By using Blogger's ["post using email" feature](https://support.google.com/blogger/answer/154172), and by discarding your Blogger (i.e., Google) password, you can create a blog where you can post but can't edit or delete posts.
 
 People with [atelophobia](https://en.wikipedia.org/wiki/Atelophobia) need such a blogging system to build up their posts, as they often feel old posts are "incomplete" or "embarrassing" and are tempted to delete them.
 
