@@ -13,7 +13,7 @@ By using Blogger's ["post using email" feature](https://support.google.com/blogg
 [Perfectionists](https://en.wikipedia.org/wiki/Perfectionism_(psychology)) (or atelophobes) need such a blogging system to grow their blogs because they feel old posts are "incomplete" or "embarrassing" and are tempted to delete them.
 
 This repository contains [one Blogger theme](theme.xml).  You can apply it to
-your blog by uploading it in Blogger > Theme > Restore.  A live example is [here](https://ykonno.blogspot.com/).
+your blog by uploading it in Blogger > Theme > Restore.
 
 It is minimalist and displays posts emailed in plain text as they are.  No date
 or title is displayed.  Text is in a monospaced font and is not supposed to use
