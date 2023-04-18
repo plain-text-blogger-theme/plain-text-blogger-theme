@@ -15,7 +15,7 @@ By using Blogger's ["post using email" feature](https://support.google.com/blogg
 This repository contains [one Blogger theme](theme.xml).  You can apply it to
 your blog by uploading it in Blogger > Theme > Restore.
 
-It is minimalist and displays posts emailed in plain text as they are.  No date
+It is minimalist.  No date
 or title is displayed.  Text is in a monospaced font and is not supposed to use
 decorations, hyperlinks, images, or even non-ASCII characters.
 
