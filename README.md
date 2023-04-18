@@ -41,7 +41,7 @@ up, you can't cancel" hosting.  In WP, however, you can create a "post-only" use
 using the [User Role Editor](https://wordpress.org/plugins/user-role-editor/)
 plugin.
 
-### Pastebin + Mastodon
+### Pastebin.com + Mastodon
 
 Another way is to publish your posts as anonymous pastes on
 [Pastebin.com](https://pastebin.com/).  However, Pastebin has stated that [it
