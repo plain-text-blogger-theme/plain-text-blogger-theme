@@ -42,8 +42,7 @@ Another way is to publish your posts as anonymous pastes on
 may delete inactive pastes](https://pastebin.com/faq#18), and there is no way
 to get a list of your anonymous pastes.
 
-You can create a post-only Mastodon by using [Buffer](https://buffer.com/) and discarding your
-Mastodon password.
+You can create a post-only Mastodon by connecting your account to [Buffer](https://buffer.com/) and discarding your password.
 
 It is possible to create a Mastodon that toots Pastebin links.  However, there
 are concerns about the Crossposter's persistence and the risk of being able to
