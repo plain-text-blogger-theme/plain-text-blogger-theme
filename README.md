@@ -18,7 +18,7 @@ your blog by uploading it in Blogger > Theme > Restore.
 It is minimalist.  No title or date is displayed.  Text is in a monospaced font and is not supposed to use
 decorations, hyperlinks, images, or even non-ASCII characters.
 
-Where I can use decorations, I am obsessed with displaying formulas nicely; I
+Where I can use decorations, I become obsessed with displaying mathematical formulas nicely; I
 start using HTML tags, Unicode characters, or finally introducing MathJax, and I
 can't concentrate on writing.  Therefore I need such a theme.
 
