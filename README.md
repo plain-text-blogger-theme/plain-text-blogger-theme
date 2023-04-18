@@ -62,3 +62,13 @@ It is possible to create a Mastodon where you toot your Pastebin links.
 However, there are concerns about Buffer's persistence and the risk of you
 recreating a Mastodon that excludes links to posts that are inconvenient for
 you.
+
+### Wikiversity
+
+[English Wikiversity](https://en.wikiversity.org/) allows
+[blogging](https://en.wikiversity.org/wiki/Help:Blog) under user pages.
+However, on the Wikimedia projects, you can edit your pages (including blanking
+them), and you can ask the administrators to delete them.  However, it may serve
+as a backup in case Blogger shuts down.  I have created
+[one](https://en.wikiversity.org/wiki/User:Yuuki_Konno_(mathematician)/Blog)
+myself.
