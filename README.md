@@ -33,9 +33,9 @@ blogs.  Theoretically, my blog should continue to be accessible after my death.
 ## Alternatives
 
 Such a system is not possible with WordPress because there is no "once you sign
-up, you can't cancel" hosting.  In WP, you can create a "post-only" user role
+up, you can't cancel" hosting.  In WP, however, you can create a "post-only" user role
 using the [User Role Editor](https://wordpress.org/plugins/user-role-editor/)
-plugin, though.
+plugin.
 
 Another way is to publish your posts as anonymous pastes on
 [Pastebin.com](https://pastebin.com/).  However, Pastebin has stated that [it
